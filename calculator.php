@@ -1,4 +1,10 @@
 <?php
+function add($n1, $n2){
+    echo $_GET['n1']. ' + ' .$_GET['n2'].' = ';
+    echo '<h1>'.$n1.' + '.$n2.' = ';
+    $add = $n1 + $n2;
+    echo $add. '</br>';
+}
 
 ?>
 
@@ -10,6 +16,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="number" name="n1" value="">insert a number
+    <input type="number" name="n2" value="">insert another number
+    <input type="button" name="add">+
+    <input type="button" name="add">*
+    <input type="button" name="add">/
+    <input type="button" name="add">
+    <input type="button" name="add">
 </body>
 </html>

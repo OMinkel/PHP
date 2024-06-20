@@ -40,7 +40,7 @@ echo "the value that you have to pay is ". "$". $x . "<br>";
     </button> <br>
 
     How many minutes did you pass on the call <br>
-
+    
     <input type="number" name="minutes" id="1">
     
     <button type="submit"> 
