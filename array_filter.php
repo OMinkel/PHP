@@ -23,6 +23,18 @@ $albums = [
         'artist' => 'The Weeknd',
         'published' => 2022,
     ],
+
+    [
+        'title' => 'DAMN',
+        'artist' => 'Kendrick Lamar',
+        'published' => 2017
+    ],
+
+    [
+        'title' => 'SMILE BIX :)',
+        'artist' => 'Rels B',
+        'published' => 2016,
+    ],
 ];
 
 
