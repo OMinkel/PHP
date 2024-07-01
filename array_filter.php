@@ -2,35 +2,48 @@
 $albums = [
     [
         'title' => 'Starboy',
-        'author' => 'The Weeknd',
+        'artist' => 'The Weeknd',
         'published' => 2016,
     ],
 
     [
         'title' => 'Mr.Morale & The Big Steppers',
-        'author' => 'Kendrick Lamar',
+        'artist' => 'Kendrick Lamar',
         'published' => 2022,
     ],
 
     [
         'title' => 'After Hours',
-        'author' => 'The Weeknd',
+        'artist' => 'The Weeknd',
         'published' => 2020,
     ],
 
     [
         'title' => 'Dawn FM',
-        'author' => 'The Weeknd',
+        'artist' => 'The Weeknd',
         'published' => 2022,
     ],
 ];
+
+
 
 $albums_after_2020 = array_filter($albums, fn($a) => $a['published'] > 2020);
 
 print_r($albums_after_2020);
 
+echo '<br><br>';
+
 $albums_before_2020 = array_filter($albums, fn($a) => $a['published'] < 2020);
 
 print_r($albums_before_2020);
+
+echo '<br><br>';
+
+$albums_by_theweeknd = array_filter($albums, fn($a) => $a['artist'] === 'The Weeknd');
+
+print_r($albums_by_theweeknd);
+
+echo '<br><br>';
+
 
 ?>
